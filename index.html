@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/js.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-left">
+                <img src="img/Logo.png" alt="Food Logo">
+            </div>
+
+            <button class="burger-menu" id="burgerMenu" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="header-nav">
+                <a href="#" class="active">Главная</a>
+                <a href="#about">О нас</a>
+                <a href="#features">Особенности</a>
+                <a href="#form">Обращение</a>
+                <a href="#recipes">Рецепты</a>
+                <a href="#login">Войти</a>
+            </nav>
+
+            <button class="header-btn">Зарегистрироваться</button>
+        </header>
+
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="#" class="active">Главная</a>
+            <a href="#about">О нас</a>
+            <a href="#features">Особенности</a>
+            <a href="#form">Обращение</a>
+            <a href="#recipes">Рецепты</a>
+            <a href="#login">Войти</a>
+            <button class="mobile-btn">Зарегистрироваться</button>
+        </nav>
+
+        <div class="overlay" id="overlay"></div>
+
+        <main>
+            <!-- HERO SECTION -->
+            <section class="hero" id="hero">
+                <div class="hero-content">
+                    <p class="hero-subtitle">ДОСТАВКА ЕДЫ</p>
+                    <h1>Наблюдайте за едой,<br>ощущайте ее вкус.</h1>
+                    <p class="hero-text">Подарите себе удовольствие от наслаждения лучшим вкусом. Моменты гурмана. Попробуйте все самое лучшее, что может вас заинтересовать.</p>
+                    <button class="hero-btn">Заказать</button>
+                </div>
+                <div class="hero-image">
+                    <img src="img/pasta.png" alt="Pasta Plate">
+                </div>
+            </section>
+
+            <!-- ABOUT SECTION -->
+            <section class="about" id="about">
+                <div class="about-image">
+                    <img src="img/spices.png" alt="Spices">
+                </div>
+                <div class="about-content">
+                    <p class="section-label">О НАС</p>
+                    <h2>Каждый прием пищи –<br>это еда с удовольствием.</h2>
+                    <p class="about-text">Есть много способов, которыми вы можете использовать свой слоган, если не пытаетесь выделить какое-то место.</p>
+                    <button class="about-btn">Узнавать больше</button>
+                </div>
+            </section>
+
+            <!-- SERVICES SECTION -->
+            <section class="services" id="features">
+                <div class="section-header">
+                    <p class="section-label">Возможности</p>
+                    <h2>Наши потрясающие услуги</h2>
+                </div>
+                <div class="services-row">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="img/simple.png" alt="Легко заказывается">
+                        </div>
+                        <h4>Легко заказывается</h4>
+                        <p>Ваш любимый партнер по доставке еды. Модная служба доставки еды</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="img/deliver.png" alt="Быстрая доставка">
+                        </div>
+                        <h4>Быстрая доставка</h4>
+                        <p>Еда у вашего порога. Лучший сервис, который оправдает ваши ожидания.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="img/receipt.png" alt="Обеспеченный платеж">
+                        </div>
+                        <h4>Обеспеченный платеж</h4>
+                        <p>Наша цель – обеспечить вашу безопасность. Это вершина надежности.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT FORM SECTION -->
+            <section class="contact" id="form">
+                <h2>Не стесняйтесь<br>обращаться к нам</h2>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" class="input-half" placeholder="Имя" required>
+                        <input type="text" class="input-half" placeholder="Фамилия" required>
+                    </div>
+                    <input type="tel" class="input-full" placeholder="Телефон" required>
+                    <input type="email" class="input-full" placeholder="Почта" required>
+                    <textarea class="textarea-full" placeholder="Введите сообщение" required></textarea>
+                    <button type="submit" class="btn-submit">Отправить сообщение</button>
+                </form>
+            </section>
+
+            <!-- RECIPES SECTION -->
+            <section class="recipes" id="recipes">
+                <div class="section-header">
+                    <p class="section-label">Рецепты</p>
+                    <h2>Выберите Свое Любимое<br>блюдо</h2>
+                </div>
+                <div class="recipes-row">
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="img/pazta.png" alt="Franch Pazta">
+                            <span class="price-tag">758.5р</span>
+                        </div>
+                        <h4>Franch Pazta</h4>
+                        <p>Единственное, что мы любим больше, чем еду, – это вы.</p>
+                        <button class="btn-order">Заказать</button>
+                    </div>
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="img/masala.png" alt="Chicken masala">
+                            <span class="price-tag">703р</span>
+                        </div>
+                        <h4>Chicken masala</h4>
+                        <p>Единственное, к чему мы относимся серьезно, – это еда. Ешьте, пейте, любите.</p>
+                        <button class="btn-order btn-active">Заказать</button>
+                    </div>
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="img/biriani.png" alt="Kacchi Biriani">
+                            <span class="price-tag">357р</span>
+                        </div>
+                        <h4>Kacchi Biriani</h4>
+                        <p>Приходите посидеть с нами. Сходите в кафе "Быстро и вкусно".</p>
+                        <button class="btn-order">Заказать</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-column footer-logo">
+                <img src="img/Logo.png" alt="Food Logo">
+            </div>
+            <div class="footer-column footer-menu">
+                <h5>Наше меню</h5>
+                <a href="#">Завтрак</a>
+                <a href="#">Обед</a>
+                <a href="#">Ужин</a>
+                <a href="#">Закуски</a>
+            </div>
+            <div class="footer-column footer-contacts">
+                <h6>Оставайтесь на связи</h6>
+                <div class="email-form">
+                    <input type="email" placeholder="Почта">
+                    <button type="button"><img src="img/send.png" class="send-btn" alt="Отправить"></button>
+                </div>
+                <div class="contact-item">
+                    <span class="icon-phone">📞</span>
+                    <p>Звоните 1 (500) 258-2654</p>
+                </div>
+                <div class="contact-item">
+                    <span class="icon-mail">✉️</span>
+                    <p>Support@foodrs.net</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
