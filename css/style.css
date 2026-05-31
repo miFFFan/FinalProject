@@ -94,6 +94,10 @@ ul, ol {
     font-weight: 500;
     padding: 5px 0;
 }
+.header-nav a:hover,
+.footer-menu a:hover{
+    color:#ff6600;
+}
 .mobile-nav {
     position: fixed;
     top: 70px;
@@ -121,8 +125,10 @@ ul, ol {
     color: #8B4513;
     text-decoration: none;
     padding: 15px 10px;
-    border-bottom: 1px solid #f0e6e0;
     transition: all 0.3s;
+}
+.mobile-nav li{
+    height: 45px;
 }
 .mobile-nav a:hover,
 .mobile-nav a:focus,
