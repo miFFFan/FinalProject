@@ -1,174 +1,176 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-html, body {
-    height: 100%;
-    min-height: 100%;
+html,
+body {
+  height: 100%;
+  min-height: 100%;
 }
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
-    overflow-x: hidden;
-    color: #333;
-    line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+  color: #333;
+  line-height: 1.6;
 }
-ul, ol {
-    list-style: none;
+ul,
+ol {
+  list-style: none;
 }
 .wrapper {
-    width: 100%;
-    overflow-x: hidden;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 70px;
-    padding: 0 20px;
-    background-color: #FFE6D9;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  background-color: #ffe6d9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 .header-left a {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .header-left img {
-    height: 40px;
-    width: auto;
+  height: 40px;
+  width: auto;
 }
 .burger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    cursor: pointer;
-    padding: 8px;
-    background: none;
-    border: none;
-    z-index: 1101;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px;
+  background: none;
+  border: none;
+  z-index: 1101;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .burger-menu span {
-    display: block;
-    width: 26px;
-    height: 3px;
-    background-color: #F6762C;
-    border-radius: 2px;
-    transition: all 0.3s ease;
+  display: block;
+  width: 26px;
+  height: 3px;
+  background-color: #f6762c;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 .burger-menu.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 .burger-menu.active span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 .burger-menu.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 .header-nav ul {
-    display: none;
-    align-items: center;
-    gap: 20px;
+  display: none;
+  align-items: center;
+  gap: 20px;
 }
 .header-nav a {
-    font-size: 14px;
-    color: #8B4513;
-    text-decoration: none;
-    transition: color 0.3s;
-    font-weight: 500;
-    padding: 5px 0;
+  font-size: 14px;
+  color: #8b4513;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: 500;
+  padding: 5px 0;
 }
 .header-nav a:hover,
-.footer-menu a:hover{
-    color:#ff6600;
+.footer-menu a:hover {
+  color: #ff6600;
 }
 .mobile-nav {
-    position: fixed;
-    top: 70px;
-    right: -100%;
-    width: 80%;
-    max-width: 300px;
-    height: calc(100vh - 70px);
-    background: white;
-    box-shadow: -5px 0 20px rgba(0,0,0,0.15);
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    transition: right 0.4s ease;
-    z-index: 1100;
+  position: fixed;
+  top: 70px;
+  right: -100%;
+  width: 80%;
+  max-width: 300px;
+  height: calc(100vh - 70px);
+  background: white;
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  transition: right 0.4s ease;
+  z-index: 1100;
 }
 .mobile-nav.active {
-    right: 0;
+  right: 0;
 }
 .mobile-nav ul {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .mobile-nav a {
-    font-size: 18px;
-    color: #8B4513;
-    text-decoration: none;
-    padding: 15px 10px;
-    transition: all 0.3s;
+  font-size: 18px;
+  color: #8b4513;
+  text-decoration: none;
+  padding: 15px 10px;
+  transition: all 0.3s;
 }
-.mobile-nav li{
-    height: 45px;
+.mobile-nav li {
+  height: 45px;
 }
 .mobile-nav a:hover,
 .mobile-nav a:focus,
 .mobile-nav a.active {
-    color: #F6762C;
+  color: #f6762c;
 }
 .overlay {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 70px);
-    background: rgba(0,0,0,0.5);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 1099;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1099;
 }
 .overlay.active {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 .mobile-nav .mobile-btn,
 .header-btn,
 .hero-btn,
 .btn-submit,
 .btn-active {
-    color: white;
-    background: linear-gradient(90deg, #F6772D, #C75412);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s;
-    font-weight: 500;
+  color: white;
+  background: linear-gradient(90deg, #f6772d, #c75412);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
 }
 .mobile-nav .mobile-btn {
-    margin-top: 20px;
-    height: 50px;
-    width: 100%;
-    font-size: 16px;
+  margin-top: 20px;
+  height: 50px;
+  width: 100%;
+  font-size: 16px;
 }
 .mobile-nav .mobile-btn:hover,
 .mobile-nav .mobile-btn:focus,
@@ -178,44 +180,44 @@ ul, ol {
 .hero-btn:focus,
 .btn-submit:hover,
 .btn-submit:focus {
-    opacity: 0.9;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(246, 118, 44, 0.3);
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(246, 118, 44, 0.3);
 }
 .header-btn {
-    display: none;
-    height: 42px;
-    width: 140px;
-    border-radius: 8px;
-    font-size: 13px;
+  display: none;
+  height: 42px;
+  width: 140px;
+  border-radius: 8px;
+  font-size: 13px;
 }
 .header-btn:focus,
 .hero-btn:focus,
 .btn-submit:focus,
 .about-btn:focus,
 .btn-order:focus {
-    outline: 2px solid #F6762C;
-    outline-offset: 2px;
+  outline: 2px solid #f6762c;
+  outline-offset: 2px;
 }
 main {
-    flex-grow: 1;
-    padding-top: 70px;
+  flex-grow: 1;
+  padding-top: 70px;
 }
 .hero,
 .about,
 .services,
 .contact,
 .recipes {
-    padding: 40px 20px;
+  padding: 40px 20px;
 }
 .hero,
 .contact {
-    background-color: #FFE6D9;
+  background-color: #ffe6d9;
 }
 .about,
 .services,
 .recipes {
-    background-color: #fff;
+  background-color: #fff;
 }
 .hero,
 .about,
@@ -223,961 +225,959 @@ main {
 .contact,
 .recipes,
 .footer {
-    text-align: center;
+  text-align: center;
 }
 .section-label {
-    font-size: 12px;
-    color: #F6762C;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    font-weight: 600;
+  font-size: 12px;
+  color: #f6762c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 .section-header {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 .section-header .section-label {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 .hero h1,
 .about h2,
 .section-header h2,
 .contact h2,
 .recipes h2 {
-    color: #3D2514;
-    font-weight: 700;
-    line-height: 1.3;
+  color: #3d2514;
+  font-weight: 700;
+  line-height: 1.3;
 }
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 .hero-content {
-    max-width: 100%;
-    z-index: 2;
+  max-width: 100%;
+  z-index: 2;
 }
 .hero-subtitle {
-    font-size: 12px;
-    color: #F6762C;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
-    font-weight: 600;
-    display: inline-block;
+  font-size: 12px;
+  color: #f6762c;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  display: inline-block;
 }
 .hero-subtitle::after {
-    content: '';
-    display: block;
-    width: 40px;
-    height: 2px;
-    background: #F6762C;
-    margin-top: 8px;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #f6762c;
+  margin-top: 8px;
 }
 .hero h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 .hero-text {
-    font-size: 14px;
-    color: #5C3D2E;
-    margin-bottom: 25px;
-    line-height: 1.6;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
+  font-size: 14px;
+  color: #5c3d2e;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-btn {
-    padding: 14px 35px;
-    font-size: 15px;
+  padding: 14px 35px;
+  font-size: 15px;
 }
 /* ИСПРАВЛЕНО: фото видно на всех разрешениях */
 .hero-image {
-    display: block;
-    margin-top: 30px;
-    text-align: center;
+  display: block;
+  margin-top: 30px;
+  text-align: center;
 }
 .hero-image img {
-    width: 250px;
-    height: 250px;
-    object-fit: contain;
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+  width: 1250px;
+  height: 1250px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
 }
 .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 /* ИСПРАВЛЕНО: фото видно на всех разрешениях */
 .about-image {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 .about-image img {
-    width: 250px;
-    height: 250px;
-    object-fit: contain;
-    border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 50%;
 }
 .about h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
+  font-size: 22px;
+  margin-bottom: 15px;
 }
 .about-text {
-    font-size: 14px;
-    color: #888;
-    margin-bottom: 20px;
-    line-height: 1.6;
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 .about-btn {
-    background: #3D2514;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 28px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: all 0.3s;
-    font-weight: 500;
+  background: #3d2514;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
 }
 .about-btn:hover,
 .about-btn:focus {
-    opacity: 0.9;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(61, 37, 20, 0.3);
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(61, 37, 20, 0.3);
 }
 .services {
-    max-width: 1200px;
-    margin: 0 auto;
+  margin: 0 auto;
 }
 .section-header h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 .services-row,
 .recipes-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 35px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+  align-items: center;
 }
 .service-card,
 .recipe-card {
-    flex: 1;
-    max-width: 100%;
-    text-align: center;
+  flex: 1;
+  max-width: 100%;
+  text-align: center;
 }
 .service-card {
-    padding: 0 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* ИСПРАВЛЕНО: иконки видны на всех разрешениях */
 .service-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
 }
 .service-icon img {
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
 }
 .service-card h3,
 .recipe-card h3 {
-    color: #3D2514;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
+  color: #3d2514;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 .service-card p,
 .recipe-card p {
-    color: #888;
-    font-size: 14px;
-    line-height: 1.5;
-    max-width: 280px;
-    margin: 0 auto;
+  color: #888;
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 280px;
+  margin: 0 auto;
 }
 .contact h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .form-row {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .input-half,
 .input-full,
 .textarea-full {
-    width: 100%;
-    height: 48px;
-    padding: 0 15px;
-    border: none;
-    border-radius: 8px;
-    background: #fff;
-    font-size: 14px;
-    color: #333;
-    outline: none;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    transition: box-shadow 0.3s;
+  width: 100%;
+  height: 48px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s;
 }
 .input-half:focus,
 .input-full:focus,
 .textarea-full:focus {
-    box-shadow: 0 0 0 3px rgba(246, 118, 44, 0.2);
+  box-shadow: 0 0 0 3px rgba(246, 118, 44, 0.2);
 }
 .textarea-full {
-    height: 120px;
-    padding: 12px 15px;
-    resize: vertical;
-    font-family: inherit;
+  height: 120px;
+  padding: 12px 15px;
+  resize: vertical;
+  font-family: inherit;
 }
 .input-half::placeholder,
 .input-full::placeholder,
 .textarea-full::placeholder {
-    color: #aaa;
+  color: #aaa;
 }
 .btn-submit {
-    padding: 14px 30px;
-    font-size: 14px;
-    margin-top: 10px;
-    width: 100%;
+  padding: 14px 30px;
+  font-size: 14px;
+  margin-top: 10px;
+  width: 100%;
 }
 .recipes {
-    max-width: 1200px;
-    margin: 0 auto;
+  margin: 0 auto;
 }
 .recipes-row {
-    gap: 30px;
+  gap: 30px;
 }
 .recipe-card {
-    background: #fff;
-    border-radius: 20px;
-    padding: 0 15px 25px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    border: 1px solid #f0f0f0;
-    transition: transform 0.3s;
+  background: #fff;
+  border-radius: 20px;
+  padding: 0 15px 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  transition: transform 0.3s;
 }
 .recipe-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 /* ИСПРАВЛЕНО: фото блюд видны на всех разрешениях */
 .recipe-image {
-    display: inline-block;
-    margin-bottom: 15px;
-    position: relative;
-    margin-top: -20px;
-    text-align: center;
+  display: inline-block;
+  margin-bottom: 15px;
+  position: relative;
+  margin-top: -20px;
+  text-align: center;
 }
 /* ИСПРАВЛЕНО: ценник виден на всех разрешениях */
 .price-tag {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: -5px;
-    background: black;
-    color: white;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 15px;
-    border-radius: 50%;
-    height: 50px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  background: black;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 50%;
+  height: 50px;
 }
 .recipe-image img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
 }
 .recipe-card p {
-    font-size: 13px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    padding: 0 5px;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding: 0 5px;
 }
 .btn-order {
-    background: transparent;
-    color: #F6762C;
-    border: 2px solid #F6762C;
-    padding: 10px 28px;
-    border-radius: 10px;
-    font-size: 13px;
-    cursor: pointer;
-    transition: all 0.3s;
-    font-weight: 500;
+  background: transparent;
+  color: #f6762c;
+  border: 2px solid #f6762c;
+  padding: 10px 28px;
+  border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
 }
 .btn-order:hover,
 .btn-order:focus {
-    background: #F6762C;
-    color: #fff;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(246, 118, 44, 0.3);
+  background: #f6762c;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(246, 118, 44, 0.3);
 }
-.btn-active {
-    background: linear-gradient(90deg, #F6772D, #C75412);
-    color: #fff;
-    border: none;
-}
+
 .btn-active:hover,
 .btn-active:focus {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #FFE6D9;
-    padding: 40px 20px;
-    width: 100%;
-    margin: 0 auto;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ffe6d9;
+  padding: 40px 20px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 30px;
 }
 .footer-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
 }
 .footer-logo {
-    justify-content: center;
-    margin-bottom: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 .footer-logo a {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .footer-logo img {
-    max-width: 120px;
-    height: auto;
+  max-width: 120px;
+  height: auto;
 }
 .footer-menu h3,
 .footer-contacts h3 {
-    color: #5C3D2E;
-    font-weight: 600;
+  color: #5c3d2e;
+  font-weight: 600;
 }
 .footer-menu h3 {
-    font-size: 16px;
-    margin-bottom: 15px;
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 .footer-menu ul {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .footer-menu a {
-    display: block;
-    color: #8B6F5C;
-    text-decoration: none;
-    margin-bottom: 10px;
-    font-size: 14px;
-    transition: color 0.3s;
-    padding: 3px 0;
+  display: block;
+  color: #8b6f5c;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+  transition: color 0.3s;
+  padding: 3px 0;
 }
 
 .footer-contacts h3 {
-    font-size: 15px;
-    margin-bottom: 12px;
+  font-size: 15px;
+  margin-bottom: 12px;
 }
 .email-form {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    background: white;
-    border-radius: 25px;
-    padding: 5px 12px;
-    width: 100%;
-    max-width: 260px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  background: white;
+  border-radius: 25px;
+  padding: 5px 12px;
+  width: 100%;
+  max-width: 260px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 .email-form input {
-    border: none;
-    outline: none;
-    flex: 1;
-    font-size: 13px;
-    color: #8B6F5C;
-    padding: 8px 5px;
-    background: transparent;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 13px;
+  color: #8b6f5c;
+  padding: 8px 5px;
+  background: transparent;
 }
 .email-form input::placeholder {
-    color: #C4A99A;
+  color: #c4a99a;
 }
 .email-form button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 0;
-    transition: transform 0.3s;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.3s;
 }
 .email-form button:hover,
 .email-form button:focus {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 .send-btn {
-    width: 28px;
-    height: 28px;
+  width: 28px;
+  height: 28px;
 }
 .contact-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    gap: 8px;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+  justify-content: center;
 }
 .contact-item p {
-    color: #8B6F5C;
-    font-size: 13px;
-    margin: 0;
+  color: #8b6f5c;
+  font-size: 13px;
+  margin: 0;
 }
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 @media (min-width: 320px) {
-    .hero h1 {
-        font-size: 32px;
-    }
-    .hero-text {
-        font-size: 15px;
-    }
-    .section-header h2,
-    .contact h2 {
-        font-size: 26px;
-    }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero-text {
+    font-size: 15px;
+  }
+  .section-header h2,
+  .contact h2 {
+    font-size: 26px;
+  }
 }
 @media (min-width: 576px) {
-    .header {
-        height: 80px;
-        padding: 0 30px;
-    }
-    .header-left img {
-        height: 45px;
-    }
-    .mobile-nav,
-    .overlay {
-        top: 80px;
-        height: calc(100vh - 80px);
-    }
-    .hero,
-    .about,
-    .services,
-    .contact,
-    .recipes {
-        padding: 60px 30px;
-    }
-    .hero {
-        padding-bottom: 80px;
-    }
-    .hero h1 {
-        font-size: 38px;
-    }
-    .hero-image img {
-        width: 300px;
-        height: 300px;
-    }
-    .about-image img {
-        width: 280px;
-        height: 280px;
-    }
-    .about h2 {
-        font-size: 26px;
-    }
-    .section-header h2 {
-        font-size: 30px;
-    }
-    .contact h2 {
-        font-size: 28px;
-    }
-    .service-icon img {
-        width: 75px;
-        height: 75px;
-    }
-    .service-card h3,
-    .recipe-card h3 {
-        font-size: 20px;
-    }
-    .recipe-image {
-        margin-top: -30px;
-    }
-    .price-tag {
-        right: -10px;
-    }
-    .recipe-image img {
-        width: 170px;
-        height: 170px;
-    }
-    .footer {
-        padding: 50px 30px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: flex-start;
-    }
-    .footer-column {
-        align-items: flex-start;
-        text-align: left;
-        width: auto;
-        flex: 1;
-        min-width: 200px;
-        max-width: 280px;
-    }
-    .contact-item {
-        justify-content: flex-start;
-    }
+  .header {
+    height: 80px;
+    padding: 0 30px;
+  }
+  .header-left img {
+    height: 45px;
+  }
+  .mobile-nav,
+  .overlay {
+    top: 80px;
+    height: calc(100vh - 80px);
+  }
+  .hero,
+  .about,
+  .services,
+  .contact,
+  .recipes {
+    padding: 60px 30px;
+  }
+  .hero {
+    padding-bottom: 80px;
+  }
+  .hero h1 {
+    font-size: 38px;
+  }
+  .hero-image img {
+    width: 300px;
+    height: 300px;
+  }
+  .about-image img {
+    width: 280px;
+    height: 280px;
+  }
+  .about h2 {
+    font-size: 26px;
+  }
+  .section-header h2 {
+    font-size: 30px;
+  }
+  .contact h2 {
+    font-size: 28px;
+  }
+  .service-icon img {
+    width: 75px;
+    height: 75px;
+  }
+  .service-card h3,
+  .recipe-card h3 {
+    font-size: 20px;
+  }
+  .recipe-image {
+    margin-top: -30px;
+  }
+  .price-tag {
+    right: -10px;
+  }
+  .recipe-image img {
+    width: 170px;
+    height: 170px;
+  }
+  .footer {
+    padding: 50px 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .footer-column {
+    align-items: flex-start;
+    text-align: left;
+    width: auto;
+    flex: 1;
+    min-width: 200px;
+    max-width: 280px;
+  }
+  .contact-item {
+    justify-content: flex-start;
+  }
 }
 @media (min-width: 768px) {
-    .header {
-        height: 90px;
-        padding: 0 50px;
-    }
-    .burger-menu {
-        display: none;
-    }
-    .header-nav ul {
-        display: flex;
-        gap: 25px;
-    }
-    .header-nav a {
-        font-size: 15px;
-    }
-    .header-btn {
-        display: block;
-        height: 50px;
-        width: 150px;
-    }
-    .mobile-nav,
-    .overlay {
-        display: none;
-    }
-    main {
-        padding-top: 90px;
-    }
-    .hero,
-    .about,
-    .services,
-    .contact,
-    .recipes {
-        padding: 60px 50px;
-    }
-    .hero {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-        min-height: 500px;
-    }
-    .hero-content {
-        max-width: 50%;
-    }
-    .hero h1 {
-        font-size: 42px;
-    }
-    .hero-text {
-        max-width: 450px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .hero-image {
-        margin-top: 0;
-        max-width: 45%;
-    }
-    .hero-image img {
-        width: 350px;
-        height: 350px;
-    }
-    .about {
-        flex-direction: row;
-        justify-content: center;
-        text-align: left;
-        gap: 50px;
-    }
-    .about-image img {
-        width: 300px;
-        height: 300px;
-    }
-    .about-content {
-        max-width: 450px;
-    }
-    .about h2 {
-        font-size: 28px;
-    }
-    .section-header h2 {
-        font-size: 34px;
-    }
-    .contact h2 {
-        font-size: 32px;
-    }
-    .services-row,
-    .recipes-row {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-    .service-card {
-        max-width: 45%;
-        flex: 0 0 45%;
-    }
-    .form-row {
-        flex-direction: row;
-    }
-    .input-half {
-        flex: 1;
-    }
-    .recipes-row {
-        gap: 25px;
-    }
-    .recipe-card {
-        max-width: 45%;
-        flex: 0 0 45%;
-    }
-    .recipe-image img {
-        width: 160px;
-        height: 160px;
-    }
-    .btn-submit {
-        width: auto;
-        align-self: center;
-        padding: 15px 50px;
-    }
-    .footer {
-        padding: 60px 50px;
-    }
-    .footer-column {
-        min-width: 220px;
-    }
+  .header {
+    height: 90px;
+    padding: 0 50px;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .header-nav ul {
+    display: flex;
+    gap: 25px;
+  }
+  .header-nav a {
+    font-size: 15px;
+  }
+  .header-btn {
+    display: block;
+    height: 50px;
+    width: 150px;
+  }
+  .mobile-nav,
+  .overlay {
+    display: none;
+  }
+  main {
+    padding-top: 90px;
+  }
+  .hero,
+  .about,
+  .services,
+  .contact,
+  .recipes {
+    padding: 60px 50px;
+  }
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    min-height: 500px;
+  }
+  .hero-content {
+    max-width: 50%;
+  }
+  .hero h1 {
+    font-size: 42px;
+  }
+  .hero-text {
+    max-width: 450px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .hero-image {
+    margin-top: 0;
+    max-width: 45%;
+  }
+  .hero-image img {
+    width: 350px;
+    height: 350px;
+  }
+  .about {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    gap: 50px;
+  }
+  .about-image img {
+    width: 300px;
+    height: 300px;
+  }
+  .about-content {
+    max-width: 450px;
+  }
+  .about h2 {
+    font-size: 28px;
+  }
+  .section-header h2 {
+    font-size: 34px;
+  }
+  .contact h2 {
+    font-size: 32px;
+  }
+  .services-row,
+  .recipes-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .service-card {
+    max-width: 45%;
+    flex: 0 0 45%;
+  }
+  .form-row {
+    flex-direction: row;
+  }
+  .input-half {
+    flex: 1;
+  }
+  .recipes-row {
+    gap: 25px;
+  }
+  .recipe-card {
+    max-width: 45%;
+    flex: 0 0 45%;
+  }
+  .recipe-image img {
+    width: 160px;
+    height: 160px;
+  }
+  .btn-submit {
+    width: auto;
+    align-self: center;
+    padding: 15px 50px;
+  }
+  .footer {
+    padding: 60px 50px;
+  }
+  .footer-column {
+    min-width: 220px;
+  }
 }
 @media (min-width: 992px) {
-    .header {
-        padding: 0 60px;
-    }
-    .header-nav ul {
-        gap: 30px;
-    }
-    .header-nav a {
-        font-size: 16px;
-    }
-    .header-btn {
-        height: 54px;
-        width: 160px;
-    }
-    .hero,
-    .about,
-    .services,
-    .contact,
-    .recipes {
-        padding: 80px 60px;
-    }
-    .hero h1 {
-        font-size: 48px;
-    }
-    .hero-text {
-        font-size: 17px;
-    }
-    .hero-image img {
-        width: 400px;
-        height: 400px;
-    }
-    .about {
-        gap: 60px;
-    }
-    .about-image img {
-        width: 350px;
-        height: 350px;
-    }
-    .about h2 {
-        font-size: 32px;
-    }
-    .section-header {
-        margin-bottom: 50px;
-    }
-    .section-header .section-label {
-        font-size: 13px;
-    }
-    .section-header h2 {
-        font-size: 36px;
-    }
-    .contact h2 {
-        font-size: 34px;
-    }
-    .services-row {
-        gap: 40px;
-    }
-    .service-card {
-        max-width: 30%;
-        flex: 1;
-    }
-    .service-icon img {
-        width: 80px;
-        height: 80px;
-    }
-    .service-card h3 {
-        font-size: 21px;
-    }
-    .service-card p {
-        font-size: 15px;
-    }
-    .contact-form {
-        max-width: 550px;
-    }
-    .recipes-row {
-        gap: 30px;
-    }
-    .recipe-card {
-        max-width: 30%;
-        flex: 1;
-        padding: 0 20px 30px;
-    }
-    .recipe-image img {
-        width: 170px;
-        height: 170px;
-    }
-    .recipe-card h3 {
-        font-size: 21px;
-    }
-    .recipe-card p {
-        font-size: 14px;
-        padding: 0 10px;
-    }
-    .btn-order {
-        padding: 12px 32px;
-        font-size: 14px;
-    }
-    .footer {
-        padding: 70px 60px;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-    .footer-column {
-        min-width: auto;
-        max-width: none;
-    }
-    .footer-menu h3 {
-        font-size: 17px;
-    }
-    .footer-menu a {
-        font-size: 15px;
-    }
-    .footer-contacts h3 {
-        font-size: 16px;
-    }
+  .header {
+    padding: 0 60px;
+  }
+  .header-nav ul {
+    gap: 30px;
+  }
+  .header-nav a {
+    font-size: 16px;
+  }
+  .header-btn {
+    height: 54px;
+    width: 160px;
+  }
+  .hero,
+  .about,
+  .services,
+  .contact,
+  .recipes {
+    padding: 80px 60px;
+  }
+  .hero h1 {
+    font-size: 48px;
+  }
+  .hero-text {
+    font-size: 17px;
+  }
+  .hero-image img {
+    width: 400px;
+    height: 400px;
+  }
+  .about {
+    gap: 60px;
+  }
+  .about-image img {
+    width: 350px;
+    height: 350px;
+  }
+  .about h2 {
+    font-size: 32px;
+  }
+  .section-header {
+    margin-bottom: 50px;
+  }
+  .section-header .section-label {
+    font-size: 13px;
+  }
+  .section-header h2 {
+    font-size: 36px;
+  }
+  .contact h2 {
+    font-size: 34px;
+  }
+  .services-row {
+    gap: 40px;
+  }
+  .service-card {
+    max-width: 30%;
+    flex: 1;
+  }
+  .service-icon img {
+    width: 80px;
+    height: 80px;
+  }
+  .service-card h3 {
+    font-size: 21px;
+  }
+  .service-card p {
+    font-size: 15px;
+  }
+  .contact-form {
+    max-width: 550px;
+  }
+  .recipes-row {
+    gap: 30px;
+  }
+  .recipe-card {
+    max-width: 30%;
+    flex: 1;
+    padding: 0 20px 30px;
+  }
+  .recipe-image img {
+    width: 170px;
+    height: 170px;
+  }
+  .recipe-card h3 {
+    font-size: 21px;
+  }
+  .recipe-card p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .btn-order {
+    padding: 12px 32px;
+    font-size: 14px;
+  }
+  .footer {
+    padding: 70px 60px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .footer-column {
+    min-width: auto;
+    max-width: none;
+  }
+  .footer-menu h3 {
+    font-size: 17px;
+  }
+  .footer-menu a {
+    font-size: 15px;
+  }
+  .footer-contacts h3 {
+    font-size: 16px;
+  }
 }
 @media (min-width: 1200px) {
-    .header {
-        padding: 0 80px;
-    }
-    .hero,
-    .about,
-    .services,
-    .contact,
-    .recipes {
-        padding: 100px 80px;
-    }
-    .hero h1 {
-        font-size: 52px;
-    }
-    .about-image img {
-        width: 380px;
-        height: 380px;
-    }
-    .section-header h2 {
-        font-size: 38px;
-    }
-    .contact h2 {
-        font-size: 36px;
-    }
-    .services-row {
-        gap: 50px;
-    }
-    .service-card {
-        max-width: 320px;
-    }
-    .service-icon img {
-        width: 85px;
-        height: 85px;
-    }
-    .service-card h3 {
-        font-size: 22px;
-    }
-    .recipes-row {
-        gap: 40px;
-    }
-    .recipe-card {
-        max-width: 320px;
-    }
-    .recipe-image img {
-        width: 180px;
-        height: 180px;
-    }
-    .recipe-card h3 {
-        font-size: 22px;
-    }
-    .footer {
-        padding: 80px 80px;
-    }
+  .header {
+    padding: 0 80px;
+  }
+  .hero,
+  .about,
+  .services,
+  .contact,
+  .recipes {
+    padding: 100px 80px;
+  }
+  .hero h1 {
+    font-size: 52px;
+  }
+  .about-image img {
+    width: 380px;
+    height: 380px;
+  }
+  .section-header h2 {
+    font-size: 38px;
+  }
+  .contact h2 {
+    font-size: 36px;
+  }
+  .services-row {
+    gap: 50px;
+  }
+  .service-card {
+    max-width: 320px;
+  }
+  .service-icon img {
+    width: 85px;
+    height: 85px;
+  }
+  .service-card h3 {
+    font-size: 22px;
+  }
+  .recipes-row {
+    gap: 40px;
+  }
+  .recipe-card {
+    max-width: 320px;
+  }
+  .recipe-image img {
+    width: 180px;
+    height: 180px;
+  }
+  .recipe-card h3 {
+    font-size: 22px;
+  }
+  .footer {
+    padding: 80px 80px;
+  }
 }
 @media (min-width: 1400px) {
-    .header {
-        height: 100px;
-        padding: 0 120px;
-    }
-    .header-left img {
-        height: 50px;
-    }
-    .header-nav ul {
-        gap: 35px;
-    }
-    .header-nav a {
-        font-size: 17px;
-    }
-    .header-btn {
-        height: 56px;
-        width: 170px;
-        font-size: 15px;
-    }
-    main {
-        padding-top: 100px;
-    }
-    .hero,
-    .about,
-    .services,
-    .contact,
-    .recipes {
-        padding: 120px 120px;
-    }
-    .hero {
-        min-height: 600px;
-    }
-    .hero h1 {
-        font-size: 56px;
-    }
-    .hero-text {
-        font-size: 18px;
-        max-width: 500px;
-    }
-    .hero-image img {
-        width: 450px;
-        height: 450px;
-    }
-    .about-image img {
-        width: 420px;
-        height: 420px;
-    }
-    .about h2 {
-        font-size: 36px;
-    }
-    .section-header {
-        margin-bottom: 60px;
-    }
-    .section-header .section-label {
-        font-size: 14px;
-    }
-    .section-header h2 {
-        font-size: 42px;
-    }
-    .contact h2 {
-        font-size: 40px;
-        margin-bottom: 40px;
-    }
-    .contact-form {
-        max-width: 550px;
-    }
-    .services-row {
-        gap: 60px;
-    }
-    .service-icon img {
-        width: 90px;
-        height: 90px;
-        margin-bottom: 20px;
-    }
-    .service-card h3 {
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-    .service-card p {
-        font-size: 16px;
-    }
-    .recipes-row {
-        gap: 50px;
-    }
-    .recipe-card {
-        padding: 0 25px 35px;
-    }
-    .recipe-image {
-        margin-bottom: 20px;
-    }
-    .recipe-image img {
-        width: 190px;
-        height: 190px;
-    }
-    .recipe-card h3 {
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-    .recipe-card p {
-        font-size: 15px;
-        margin-bottom: 25px;
-    }
-    .btn-order {
-        padding: 14px 40px;
-        font-size: 15px;
-    }
-    .footer {
-        padding: 100px 120px;
-        min-height: 350px;
-    }
-    .footer-logo {
-        padding-top: 20px;
-    }
-    .footer-logo img {
-        max-width: 150px;
-    }
-    .footer-menu h3 {
-        font-size: 18px;
-        margin-bottom: 20px;
-    }
-    .footer-menu a {
-        font-size: 16px;
-        margin-bottom: 12px;
-    }
-    .footer-contacts h3 {
-        font-size: 17px;
-        margin-bottom: 15px;
-    }
-    .email-form {
-        width: 260px;
-        padding: 6px 18px;
-        margin-bottom: 20px;
-    }
-    .email-form input {
-        font-size: 15px;
-    }
-    .send-btn {
-        width: 32px;
-        height: 32px;
-    }
-    .contact-item {
-        margin-bottom: 14px;
-        gap: 10px;
-    }
-    .contact-item p {
-        font-size: 15px;
-    }
+  .header {
+    height: 100px;
+    padding: 0 120px;
+  }
+  .header-left img {
+    height: 50px;
+  }
+  .header-nav ul {
+    gap: 35px;
+  }
+  .header-nav a {
+    font-size: 17px;
+  }
+  .header-btn {
+    height: 56px;
+    width: 170px;
+    font-size: 15px;
+  }
+  main {
+    padding-top: 100px;
+  }
+  .hero,
+  .about,
+  .services,
+  .contact,
+  .recipes {
+    padding: 120px 120px;
+  }
+  .hero {
+    min-height: 600px;
+  }
+  .hero h1 {
+    font-size: 56px;
+  }
+  .hero-text {
+    font-size: 18px;
+    max-width: 500px;
+  }
+  .hero-image img {
+    width: 1096px;
+    height: 561px;
+  }
+  .about-image img {
+    width: 420px;
+    height: 420px;
+  }
+  .about h2 {
+    font-size: 36px;
+  }
+  .section-header {
+    margin-bottom: 60px;
+  }
+  .section-header .section-label {
+    font-size: 14px;
+  }
+  .section-header h2 {
+    font-size: 42px;
+  }
+  .contact h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .contact-form {
+    max-width: 550px;
+  }
+  .services-row {
+    gap: 60px;
+  }
+  .service-icon img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+  }
+  .service-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .service-card p {
+    font-size: 16px;
+  }
+  .recipes-row {
+    gap: 50px;
+  }
+  .recipe-card {
+    padding: 0 25px 35px;
+  }
+  .recipe-image {
+    margin-bottom: 20px;
+  }
+  .recipe-image img {
+    width: 190px;
+    height: 190px;
+  }
+  .recipe-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .recipe-card p {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+  .btn-order {
+    padding: 14px 40px;
+    font-size: 15px;
+  }
+  .footer {
+    padding: 100px 120px;
+    min-height: 350px;
+  }
+  .footer-logo {
+    padding-top: 20px;
+  }
+  .footer-logo img {
+    max-width: 150px;
+  }
+  .footer-menu h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .footer-menu a {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .footer-contacts h3 {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+  .email-form {
+    width: 260px;
+    padding: 6px 18px;
+    margin-bottom: 20px;
+  }
+  .email-form input {
+    font-size: 15px;
+  }
+  .send-btn {
+    width: 32px;
+    height: 32px;
+  }
+  .contact-item {
+    margin-bottom: 14px;
+    gap: 10px;
+  }
+  .contact-item p {
+    font-size: 15px;
+  }
 }
-a, button, input, textarea {
-    transition: all 0.3s ease;
+a,
+button,
+input,
+textarea {
+  transition: all 0.3s ease;
 }
