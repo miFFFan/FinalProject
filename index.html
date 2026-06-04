@@ -3,42 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Food Delivery - доставка еды с удовольствием. Быстро, вкусно, надежно."
-    />
+    <meta name="description" content="Food Delivery - доставка еды с удовольствием. Быстро, вкусно, надежно." />
     <title>Food Delivery - Доставка еды</title>
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/js.js"></script>
   </head>
   <body>
-    <nav class="mobile-nav" id="mobileNav" aria-label="Мобильная навигация">
-      <ul>
-        <li><a href="#" class="active" aria-current="page">Главная</a></li>
-        <li><a href="#about">О нас</a></li>
-        <li><a href="#features">Особенности</a></li>
-        <li><a href="#form">Обращение</a></li>
-        <li><a href="#recipes">Рецепты</a></li>
-        <li><a href="#login">Войти</a></li>
-      </ul>
-      <button class="mobile-btn" type="button">Зарегистрироваться</button>
-    </nav>
-
-    <div class="overlay" id="overlay"></div>
-
     <div class="wrapper">
       <header class="header">
         <div class="header-left">
           <a href="/" aria-label="На главную">
-            <img
-              src="img/Logo.png"
-              alt="Food Delivery"
-              width="120"
-              height="40"
-            />
+            <img src="img/Logo.png" alt="Food Delivery" width="120" height="40" />
           </a>
         </div>
-
         <button
           class="burger-menu"
           id="burgerMenu"
@@ -65,174 +42,93 @@
         <button class="header-btn" type="button">Зарегистрироваться</button>
       </header>
 
+      <nav class="mobile-nav" id="mobileNav" aria-label="Мобильная навигация">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item"><a href="#" class="active" aria-current="page">Главная</a></li>
+          <li class="mobile-nav__item"><a href="#about">О нас</a></li>
+          <li class="mobile-nav__item"><a href="#features">Особенности</a></li>
+          <li class="mobile-nav__item"><a href="#form">Обращение</a></li>
+          <li class="mobile-nav__item"><a href="#recipes">Рецепты</a></li>
+          <li class="mobile-nav__item"><a href="#login">Войти</a></li>
+        </ul>
+        <button class="mobile-btn" type="button">Зарегистрироваться</button>
+      </nav>
+
       <main>
         <section class="hero" id="hero" aria-labelledby="hero-heading">
           <div class="hero-content">
             <p class="hero-subtitle">ДОСТАВКА ЕДЫ</p>
-            <h1 id="hero-heading">
-              Наблюдайте за едой,<br />ощущайте ее вкус.
-            </h1>
+            <h1 id="hero-heading">Наблюдайте за едой,<br />ощущайте ее вкус.</h1>
             <p class="hero-text">
-              Подарите себе удовольствие от наслаждения лучшим вкусом. Моменты
-              гурмана. Попробуйте все самое лучшее, что может вас
-              заинтересовать.
+              Подарите себе удовольствие от наслаждения лучшим вкусом. Моменты гурмана.
             </p>
             <button class="hero-btn" type="button">Заказать</button>
           </div>
           <div class="hero-image">
-            <img
-              src="img/pasta.png"
-              alt="Паста на тарелке"
-              width="1400"
-              height="400"
-            />
+            <img src="img/pasta.png" alt="Паста на тарелке" />
           </div>
         </section>
 
         <section class="about" id="about" aria-labelledby="about-heading">
           <div class="about-image">
-            <img
-              src="img/spices.png"
-              alt="Специи"
-              width="350"
-              height="350"
-              loading="lazy"
-            />
+            <img src="img/spices.png" alt="Специи" width="350" height="350" loading="lazy" />
           </div>
           <div class="about-content">
-            <p class="section-label">О НАС</p>
-            <h2 id="about-heading">
-              Каждый прием пищи –<br />это еда с удовольствием.
-            </h2>
-            <p class="about-text">
-              Есть много способов, которыми вы можете использовать свой слоган,
-              если не пытаетесь выделить какое-то место.
-            </p>
+            <h1 class="section-label">О НАС</h1>
+            <h2 id="about-heading">Каждый прием пищи –<br />это еда с удовольствием.</h2>
+            <p class="about-text">Есть много способов, которыми вы можете использовать свой слоган.</p>
             <button class="about-btn" type="button">Узнавать больше</button>
           </div>
         </section>
 
-        <section
-          class="services"
-          id="features"
-          aria-labelledby="services-heading"
-        >
+        <section class="services" id="features" aria-labelledby="services-heading">
           <div class="section-header">
-            <p class="section-label">Возможности</p>
+            <h1 class="section-label">Возможности</h1>
             <h2 id="services-heading">Наши потрясающие услуги</h2>
           </div>
           <div class="services-row">
             <article class="service-card">
-              <div class="service-icon">
-                <img
-                  src="img/simple.png"
-                  alt=""
-                  width="80"
-                  height="80"
-                  loading="lazy"
-                />
-              </div>
+              <div class="service-icon"><img src="img/simple.png" alt="" width="80" height="80" loading="lazy" /></div>
               <h3>Легко заказывается</h3>
-              <p>
-                Ваш любимый партнер по доставке еды. Модная служба доставки еды
-              </p>
+              <p>Ваш любимый партнер по доставке еды.</p>
             </article>
             <article class="service-card">
-              <div class="service-icon">
-                <img
-                  src="img/deliver.png"
-                  alt=""
-                  width="80"
-                  height="80"
-                  loading="lazy"
-                />
-              </div>
+              <div class="service-icon"><img src="img/deliver.png" alt="" width="80" height="80" loading="lazy" /></div>
               <h3>Быстрая доставка</h3>
-              <p>
-                Еда у вашего порога. Лучший сервис, который оправдает ваши
-                ожидания.
-              </p>
+              <p>Еда у вашего порога.</p>
             </article>
             <article class="service-card">
-              <div class="service-icon">
-                <img
-                  src="img/receipt.png"
-                  alt=""
-                  width="80"
-                  height="80"
-                  loading="lazy"
-                />
-              </div>
+              <div class="service-icon"><img src="img/receipt.png" alt="" width="80" height="80" loading="lazy" /></div>
               <h3>Обеспеченный платеж</h3>
-              <p>
-                Наша цель – обеспечить вашу безопасность. Это вершина
-                надежности.
-              </p>
+              <p>Наша цель – обеспечить вашу безопасность.</p>
             </article>
           </div>
         </section>
 
         <section class="contact" id="form" aria-labelledby="contact-heading">
-            <h1 style="color: black;">Обращение</h1>
+          <h1>Обращение</h1>
           <h2 id="contact-heading">Не стесняйтесь<br />обращаться к нам</h2>
           <form class="contact-form" action="#" method="POST">
             <div class="form-row">
-              <input
-                type="text"
-                class="input-half"
-                placeholder="Имя"
-                name="firstName"
-                required
-              />
-              <input
-                type="text"
-                class="input-half"
-                placeholder="Фамилия"
-                name="lastName"
-                required
-              />
+              <input type="text" class="input-half" placeholder="Имя" name="firstName" required />
+              <input type="text" class="input-half" placeholder="Фамилия" name="lastName" required />
             </div>
-            <input
-              type="tel"
-              class="input-full"
-              placeholder="Телефон"
-              name="phone"
-              required
-            />
-            <input
-              type="email"
-              class="input-full"
-              placeholder="Почта"
-              name="email"
-              required
-            />
-            <textarea
-              class="textarea-full"
-              placeholder="Введите сообщение"
-              name="message"
-              required
-            ></textarea>
-            <button type="submit" class="btn-submit">
-              Отправить сообщение
-            </button>
+            <input type="tel" class="input-full" placeholder="Телефон" name="phone" required />
+            <input type="email" class="input-full" placeholder="Почта" name="email" required />
+            <textarea class="textarea-full" placeholder="Введите сообщение" name="message" required></textarea>
+            <button type="submit" class="btn-submit">Отправить сообщение</button>
           </form>
         </section>
 
         <section class="recipes" id="recipes" aria-labelledby="recipes-heading">
           <div class="section-header">
-            <p class="section-label">Рецепты</p>
+            <h1 class="section-label">Рецепты</h1>
             <h2 id="recipes-heading">Выберите Свое Любимое<br />блюдо</h2>
           </div>
           <div class="recipes-row">
             <article class="recipe-card">
               <div class="recipe-image">
-                <img
-                  src="img/pazta.png"
-                  alt="Franch Pazta"
-                  width="180"
-                  height="180"
-                  loading="lazy"
-                />
+                <img src="img/pazta.png" alt="Franch Pazta" width="180" height="180" loading="lazy" />
                 <span class="price-tag">758р</span>
               </div>
               <h3>Franch Pazta</h3>
@@ -241,39 +137,20 @@
             </article>
             <article class="recipe-card">
               <div class="recipe-image">
-                <img
-                  src="img/masala.png"
-                  alt="Chicken masala"
-                  width="180"
-                  height="180"
-                  loading="lazy"
-                />
+                <img src="img/masala.png" alt="Chicken masala" width="180" height="180" loading="lazy" />
                 <span class="price-tag">703р</span>
               </div>
               <h3>Chicken masala</h3>
-              <p>
-                Единственное, к чему мы относимся серьезно, – это еда. Ешьте,
-                пейте, любите.
-              </p>
-              <button class="btn-order btn-active" type="button">
-                Заказать
-              </button>
+              <p>Единственное, к чему мы относимся серьезно, – это еда.</p>
+              <button class="btn-order btn-active" type="button">Заказать</button>
             </article>
             <article class="recipe-card">
               <div class="recipe-image">
-                <img
-                  src="img/biriani.png"
-                  alt="Kacchi Biriani"
-                  width="180"
-                  height="180"
-                  loading="lazy"
-                />
+                <img src="img/biriani.png" alt="Kacchi Biriani" width="180" height="180" loading="lazy" />
                 <span class="price-tag">357р</span>
               </div>
               <h3>Kacchi Biriani</h3>
-              <p>
-                Приходите посидеть с нами. Сходите в кафе "Быстро и вкусно".
-              </p>
+              <p>Приходите посидеть с нами.</p>
               <button class="btn-order" type="button">Заказать</button>
             </article>
           </div>
@@ -283,12 +160,7 @@
       <footer class="footer">
         <div class="footer-column footer-logo">
           <a href="/" aria-label="На главную">
-            <img
-              src="img/Logo.png"
-              alt="Food Delivery"
-              width="120"
-              height="40"
-            />
+            <img src="img/Logo.png" alt="Food Delivery" width="120" height="40" />
           </a>
         </div>
         <div class="footer-column footer-menu">
@@ -306,33 +178,19 @@
           <h3>Оставайтесь на связи</h3>
           <form action="">
             <div class="email-form">
-              <input
-                type="email"
-                placeholder="Почта"
-                aria-label="Email для подписки"
-              />
+              <input type="email" placeholder="Почта" aria-label="Email для подписки" required />
               <button type="submit" aria-label="Отправить">
-                <img
-                  src="img/send.png"
-                  class="send-btn"
-                  alt=""
-                  width="28"
-                  height="28"
-                />
+                <img src="img/send.png" class="send-btn" alt="" width="28" height="28" />
               </button>
             </div>
           </form>
           <div class="contact-item">
-            <span class="icon-phone" aria-hidden="true">
-              <img src="img/phone.png" alt="Телефон" />
-            </span>
+            <span class="icon-phone" aria-hidden="true"><img src="img/phone.png" alt="Телефон" /></span>
             <a href="tel:15002582654">1 (500) 258-2654</a>
           </div>
           <div class="contact-item">
-            <span class="icon-mail" aria-hidden="true">
-              <img src="img/mail.png" alt="" />
-            </span>
-            <a href="mailto:Support@foodrs.net">Support@foodrs.net</p>
+            <span class="icon-mail" aria-hidden="true"><img src="img/mail.png" alt="" /></span>
+            <a href="mailto:Support@foodrs.net">Support@foodrs.net</a>
           </div>
         </div>
       </footer>
