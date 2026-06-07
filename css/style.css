@@ -701,6 +701,12 @@ img {
   display: block;
 }
 
+a,
+button,
+input,
+textarea {
+  transition: all 0.3s ease;
+}
 
 @media (min-width: 320px) {
   .hero h1 {
@@ -1236,9 +1242,3 @@ img {
   }
 }
 
-a,
-button,
-input,
-textarea {
-  transition: all 0.3s ease;
-}
